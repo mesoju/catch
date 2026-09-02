@@ -2,3 +2,12 @@
 ---
 
 @import "{{ site.theme }}";
+
+img {
+  max-width:50%;
+  align-self: center;
+}
+
+.socials {
+  max-width: 20%;
+}
