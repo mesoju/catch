@@ -18,6 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+repository: mesoju/catch
+
 title: CATCH!
 email: vincenttong328@gmail.com
 logo: /assets/imgs/tempcatch.png
