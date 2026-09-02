@@ -1,6 +1,10 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
+title: Home
 ---
+
+# Welcome to CATCH!
+
+This website is a hub for FRC programming resources, lessons, and related activities.
+
+Use this site to explore the materials and information that help you navigate the program.

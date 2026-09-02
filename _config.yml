@@ -18,18 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: CATCH
+title: CATCH!
 email: vincenttong328@gmail.com
+logo: /assets/imgs/tempcatch.png
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to CATCH! This website will serve as a hub to help you navigate lessons and resources for FRC programming and other FRC related activities. I hope to be of great help to you!
-baseurl: "https://mesoju.github.io" # the subpath of your site, e.g. /blog
-url: "/catch" # the base hostname & protocol for your site, e.g. http://example.com
+  Join our <a href="https://discord.gg/UTpNwavBxd">Discord!</a>
+baseurl: "/catch" # the subpath of your site, e.g. /blog
+url: "https://mesoju.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: minima
+# Do not use `theme: minimal` here. For GitHub Pages, use the remote theme below.
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
 
 # Exclude from processing.
