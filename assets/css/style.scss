@@ -3,11 +3,95 @@
 
 @import "{{ site.theme }}";
 
+@font-face {
+  font-family: 'Sudo';
+  src: url('../fonts/SudoVariable.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nintend';
+  src: url('../fonts/NintendBoldRM8E.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font: 18px/1.5 "Sudo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 img {
   max-width:50%;
   align-self: center;
 }
 
+ul {
+  list-style: none;
+}
+
+.vertical-line {
+  position: fixed;
+  margin-left: -16px;
+  border-left: 2px solid black; /* Sets the line thickness, style, and color */
+  height: 4em;                /* Sets the length of your line */
+}
+
+.social-container {
+  padding-top: 0em;
+}
+
 .socials {
   max-width: 20%;
+}
+
+.category-splash-text {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  transform: rotate(-90deg);
+  transform-origin: left top;
+
+  white-space: nowrap;
+
+  font: 14px/1.5 "Nintend", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 6vh;
+  color: lightskyblue;
+  opacity: 0.35;
+}
+
+.penguin-splash {
+  max-width:15%;
+  align-self: center;
+
+  position: fixed;
+  bottom: -3%;
+  right: 0;
+}
+
+.category-home {
+  color: #ffcaef;
+  border-color: #ffcaef;
+}
+
+.category-general {
+  color: #ffcaef;
+  border-color: #ffcaef;
+}
+
+.category-programming {
+  color: #8acaff;
+  border-color: #8acaff;
+}
+
+.category-electrical {
+  color: #ffb977;
+  border-color: #ffb977;
+}
+
+.team-link {
+  font: 24px/1.5 "Nintend", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }

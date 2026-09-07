@@ -23,13 +23,14 @@ repository: mesoju/catch
 title: CATCH!
 email: vincenttong328@gmail.com
 logo: /assets/imgs/tempcatch.png
+penguin_splash: /assets/imgs/animal_penguin_music_band.png
 description: >- # this means to ignore newlines until "baseurl:"
-  "Take the first <a href="https://forms.gle/kQf38u24DGkNBPuL6">survey!</a>"
+  
 baseurl: "/catch" # the subpath of your site, e.g. /blog
 url: "https://mesoju.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 discord_link: "https://discord.gg/UTpNwavBxd"
-instagram_link: ""
+instagram_link: "https://www.instagram.com/frc.mesoju/"
 github_username:  mesoju
 
 # Build settings
