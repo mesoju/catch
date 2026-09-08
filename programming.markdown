@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Programming
 permalink: /programming/
 team: programming
 append_posts: true
