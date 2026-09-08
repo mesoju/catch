@@ -43,7 +43,7 @@ header {
 
   a, div, h3, p {
     margin: 0;
-    font-size: clamp(0.01rem, 3cqh, 2.4rem);
+    font-size: clamp(0.01rem, 3cqh, 1.6rem);
     display: flex;
     flex-wrap: nowrap;
   }
@@ -81,10 +81,18 @@ section {
 
 .social-container {
   padding-top: 0em;
+  max-width: 100cqw;
+  max-height: 15cqh;
 }
 
 .socials {
-  max-width: 30cqw;
+  margin-right: 8cqw;
+  max-width: 16cqw;
+  float: left;
+}
+
+.fa-2x {
+  font-size: clamp(0.01rem, 6cqh, 2.4rem);;
 }
 
 .category-splash-text {
