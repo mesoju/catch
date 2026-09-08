@@ -30,7 +30,7 @@
         <h3>Follow CATCH! ^_^</h3>
         <div class="social-container">
           <a class="socials category-{{ page.team | default: 'home' }}" href="{{ site.discord_link | absolute_url }}"><i class="fa-brands fa-discord fa-2x"></i></a>
-          <a class="socials category-{{ page.team | default: 'home' }}"><i class="fa-brands fa-github fa-2x"></i></a>
+          <a class="socials category-{{ page.team | default: 'home' }}" href="{{ site.github.repository_url }}"><i class="fa-brands fa-github fa-2x"></i></a>
           <a class="socials category-{{ page.team | default: 'home' }}" href="{{ "https://www.instagram.com/frc.mesoju/" | absolute_url }}"><i class="fa-brands fa-instagram fa-2x"></i></a>
         </div>
 
@@ -40,18 +40,28 @@
         
         <h3>Learn More About Us!</h3>
         <a href="{{ "/mesoju" | absolute_url }}">Vincent Tong (mesoju)</a>
-        <br>
         <a href="{{ "/jerryzheng" | absolute_url }}">Jerry Zheng</a>
         <hr>
-        <h3>Filter</h3>
+        <h3>Sub-Teams</h3>
         <a class="team-link category-programming" href="{{ "/programming" | absolute_url }}">Programming</a>
         <a class="team-link category-electrical" href="{{ "/electrical" | absolute_url }}">Electrical</a>
+        <a class="team-link category-mechanical" href="{{ "/mechanical" | absolute_url }}">Mechanical</a>
+        <a class="team-link category-fabrication" href="{{ "/fabrication" | absolute_url }}">Fabrication</a>
 
         <hr>
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
         {% endif %}
+        <footer>
+        <!--{% if site.github.is_project_page %}
+        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+        {% endif %}
+        {% if site.github.is_project_page %}
+        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+        {% endif %}-->
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist" style="font-size: 1em;">orderedlist</a></small></p>
+      </footer>
       </header>
       <section>
 
@@ -77,15 +87,6 @@
       {% endif %}
 
       </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
 
       <div class="category-splash-text category-{{ page.team | default: 'home' }}">{{ page.team | default: 'home' | upcase }}</div>
       <img class="penguin-splash" src="{{ site.penguin_splash | relative_url}}" alt="Logo" />

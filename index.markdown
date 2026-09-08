@@ -11,4 +11,6 @@ This website is a hub for FRC resources, lessons, and related activities created
 
 Use this site to explore the materials and information that help you navigate the program.
 
+The main navigation menu is located on the left, and you can filter your sub-team in the `Sub-Teams` section.
+
 ---
