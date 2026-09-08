@@ -43,7 +43,7 @@ header {
 
   a, div, h3, p {
     margin: 0;
-    font-size: clamp(0.01rem, 3cqh, 1.6rem);
+    font-size: clamp(0.01rem, 3cqh, 1.4rem);
     display: flex;
     flex-wrap: nowrap;
   }
@@ -154,7 +154,7 @@ section {
 }
 
 .team-link {
-  font: 3cqh/1.5 "Nintend", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: clamp(0.01rem, 3cqh, 1.4rem)/1.5 "Nintend", "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: flex;
   flex-wrap: nowrap;
 }
