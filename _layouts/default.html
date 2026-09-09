@@ -71,15 +71,12 @@
         <ul class="post-list">
           {%- for post in site.posts -%}
             {% if post.team == page.team or page.team == "home" %}
-              <li>
-                <div class="vertical-line category-{{ post.team | default: 'home' }}"></div>
-                <span class="post-meta">{{ post.date | date: date_format }}</span>
-                <h3 style="margin-bottom: 0px;">
-                  <a class="post-link category-{{ post.team | default: 'home' }}" href="{{ post.url | relative_url }}">
-                    {{ post.title | escape }}
-                  </a>
-                </h3>
-                <h5>{{ post.author }}</h5>
+              <li class="post-list-item">
+                <a class="post-link category-{{ post.team | default: 'home' }}" href="{{ post.url | relative_url }}">
+                  <span class="post-meta">{{ post.date | date: date_format }}</span>
+                  <span class="post-title">{{ post.title | escape }}</span>
+                  <span class="post-author">{{ post.author }}</span>
+                </a>
               </li>
             {% endif %}
           {%- endfor -%}
