@@ -7,6 +7,7 @@
 
 {% seo %}
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/mobile_fix.css?v=" | append: site.github.build_revision | relative_url }}">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <script src="https://kit.fontawesome.com/5d46a52212.js" crossorigin="anonymous"></script>
     <!--[if lt IE 9]>
@@ -39,7 +40,7 @@
         <hr>
         
         <h3>Learn More About Us!</h3>
-        <a href="{{ "/mesoju" | absolute_url }}">Vincent Tong (mesoju)</a>
+        <a href="{{ "/mesoju" | absolute_url }}" style="white-space: nowrap; overflow: hidden;">Vincent Tong (mesoju)</a>
         <a href="{{ "/jerryzheng" | absolute_url }}">Jerry Zheng</a>
         <hr>
         <h3>Sub-Teams</h3>

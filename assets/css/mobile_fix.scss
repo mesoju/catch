@@ -1,0 +1,39 @@
+---
+---
+
+@media (max-width: 968px) {
+  .sidebar {
+    display: none; /* Hide heavy sidebars on mobile */
+  }
+
+  header {
+    width: 70vw;
+    height: auto;
+  }
+
+  .wrapper {
+    width:70vw;
+    margin:0 auto;
+    float: left;
+  }
+
+  section {
+      width:70vw;
+      padding-bottom:50px;
+      margin:0 auto;
+      float: left;
+  }
+
+  .category-splash-text {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    transform: rotate(-90deg);
+    transform-origin: left top;
+
+    white-space: nowrap;
+
+    font-size: 4vh;
+  }
+}
