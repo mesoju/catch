@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Mechanical
 permalink: /mechanical/
 team: mechanical
 append_posts: true

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Fabrication
 permalink: /fabrication/
 team: fabrication
 append_posts: true

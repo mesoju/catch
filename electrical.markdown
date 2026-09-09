@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Home
+title: Electrical
 permalink: /electrical/
 team: electrical
 append_posts: true
