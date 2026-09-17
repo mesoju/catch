@@ -23,6 +23,11 @@ If you have your own laptop for programming, you're going to need some software 
 >
 >WPILib is a comprehensive library of tools and dependencies intended to store the majority of software you need for coding an FRC robot. It installs its own separate copy of **Visual Studio Code** where you will write all of your code, and a handful of WPILib tools. The only tools that are currently important to us are **Elastic** and **Advantage Scope**, but more on this later.
 
+## GitHub Desktop
+>[GitHub Desktop Installation](https://desktop.github.com/download/)
+>
+>GitHub is used for collaboration and storing code. All of the robot's code will be uploaded to GitHub, and any collaboration on coding the robot will be facilitated by GitHub. This is the industry standard for some software development teams to work together on a project, more information to come later. GitHub Desktop, while not required as it is already installed by **Visual Studio Code**, provides **a clean interface for handling commits, repository clones, etc.**
+
 ## NI Tools
 >[!WARNING]
 >These tools MAY be **deprecated after 2026**, as these were created in partnership with *National Instruments LabVIEW* which use the **roboRIO**, however FRC has decided to roll out the **Systemcore** by *Limelight* in future seasons.<br> ***As of 9/17/26, WPILib is planning for a new driver station app.***
