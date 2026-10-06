@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Scouting"
+date:   2026-10-02 01:11:02 -0400
+author: Autumn Allen
+team: strategy
+---
+
+>*Scouting refers to collecting information and data about other team’s robots and their capabilities. Scouting is EXTREMELY important for planning a match strategy with your alliance partners and determining a picklist for alliance selection. Teams often perform two types of scouting: **pit scouting** and **match or stand scouting.***
+
+**Pit scouting** is used to gather information about other teams’ robots to understand their full capabilities and prepare to compete either with or against them. You can gather information you wouldn’t know simply by watching them compete, such as the specific mechanical components (kinds of motors, how their subsystems are built, etc). In past years, I made a google form and compiled questions about how their robot is built (things like the kind of motors they use when driving, the kind of shooter they have, fuel capacity), their autonomous codes, and preferred role during active/inactive shifts.
+
+Work with the mechanical team to determine what components would be helpful to know and what kind of answers to expect. Don’t be afraid to ask what different terminology means and the pros/cons of each—it’s better to ask now than to be in queuing and realize you have no idea what the other teams are talking about. You don’t have to know everything in depth, but you should know how the info you’re gathering is beneficial to you; know some of the common “types” or robots and the pros/cons. As you watch more matches, collect more information, and see more designs, you’ll be able to understand how they compare to one another and how to compete against each “type”.
+
+> [!NOTE]
+> *For example, during Rebuilt, one of the big decisions teams made was to go with either a turret or drum shooter. The turret is harder to defend against because it adjusts to the position of the hub as it moves around the field, but a fixed shooter with a large hopper allowed teams to output massive amounts of fuel. As the season progressed, the drum + massive hopper combo outcompeted turrets more often, especially because a turret is much more difficult to get to work properly, so some turret teams considered switching to the drum. During Reefscape, most robots (at least early on) were built to score coral alone because you were awarded ranking points for meeting the coral threshold. Some bots focused on algae, while some (like us) focused on defense and climbing.*
+
+**Match/Stand Scouting** is used to collect specific statistics about robots during their matches to determine things like EPA and OPR, which can be graphed or analyzed to determine which bots perform better on the field. There are many ways to scout matches; I’ve noticed many teams either use Lovat Collection to scout matches and Lovat Dashboard to look at the data collected (both available on the appstore), or develop their own application to upload data. In the past, we’ve used Lovat, but personally I’ve had issues getting the data to upload properly into Dashboard, so we’ve also used the insights listed on the Blue Alliance and statbotics.io for reference (more information about these websites under additional resources).
+
+This upcoming year, I plan on switching to VScout, an app made by 4189 (thank you coby) that can do pit scouting and match scouting in one application. Make sure you train people how to scout BEFORE the actual competition—it’s much easier than trying to teach people the morning of or during the comp and have them possibly make mistakes because they haven’t had time to practice. I would also suggest gathering multiple people to do pit scouting on load-in day or before opening ceremonies of Day 1; it goes by much faster and helps people get acclimated to talking to other teams.
+

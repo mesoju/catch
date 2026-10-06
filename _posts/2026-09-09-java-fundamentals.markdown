@@ -103,7 +103,8 @@ Scope means that **variables within a code block stays within that code block**.
 <hr>
 
 ## 6. Operators
-Operators are symbols that describe how you interact with variables. 
+Operators are symbols that describe how you interact with variables.
+
 `Comparators`: These **compare two variables together**, and return a **boolean** (a ***true*** or ***false***). They're important for selection control structures.
 
 `Assignors`: Assignors can either **set or increment a variable to a specified value.**

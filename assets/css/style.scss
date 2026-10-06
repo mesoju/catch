@@ -21,6 +21,7 @@
 
 body {
   font: 18px/1.5 "Sudo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#272727;
 }
 
 img {
@@ -29,12 +30,11 @@ img {
 }
 
 ul {
-  list-style: none;
+  list-style: inside;
 }
 
-li {
-  display: block;
-}
+
+
 
 .post-list {
   padding-left: 0;
@@ -102,10 +102,22 @@ footer {
   margin:0 auto;
 }
 
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+  background-color: #e7e7e7;
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
 section {
-  width:45vw;
+  width:48vw;
   float:right;
   padding-bottom:50px;
+
+  p {
+    margin-left: 2rem;
+  }
 }
 
 .social-container {
