@@ -22,13 +22,19 @@ team: programming
     3. Methods
     4. Properties
 
+
 4. Event-Based Programming
+
 
 5. Encapsulation & Scope
 
+
 6. Operators
 
+
 7. Exception Handling
+
+
 <hr>
 
 ## Abstract
