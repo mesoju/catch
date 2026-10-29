@@ -14,7 +14,7 @@ If you have your own laptop for programming, you're going to need some software 
 > Additionally, most will ask whether you would like to install this program for only your user or all users. I recommend you select the option for **'this user only'** if you have a shared computer.
 
 > [!CAUTION]
-> Some of the resources **require a computer restart**. You should only proceed after you have finished or backed up your work. 
+> Some of the resources **require a computer restart**. You should only proceed after you have finished and backed up your work. 
 
 ---
 

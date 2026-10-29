@@ -6,6 +6,13 @@ author: Vincent Tong
 team: programming
 ---
 
+>[!NOTE]
+>This article acts as an over-arching introduction and expectation to Java programming. No code will be formally used here, but you may find this article important to understand what you might expect when you begin to program.
+>
+>It's an objectively long read, but should provide adequate background knowledge so you don't dive head first into programming without any prior knowledge.
+
+<hr>
+
 ## Table of Contents
 1. Variables
     1. Primitives
@@ -21,19 +28,10 @@ team: programming
     2. Objects
     3. Methods
     4. Properties
-
-
 4. Event-Based Programming
-
-
 5. Encapsulation & Scope
-
-
 6. Operators
-
-
 7. Exception Handling
-
 
 <hr>
 
