@@ -19,9 +19,79 @@
   font-display: swap;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 body {
+  opacity: 1;
   font: 18px/1.5 "Sudo", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#272727;
+}
+
+.splash-text {
+  opacity: 1;
+  font: 12cqh/1.5 "Sudo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 0.25s;
+}
+
+.splash-title {
+  opacity: 1;
+  font: 4cqh/1.5 "Sudo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  pointer-events: none;
+  animation: fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 0.25s;
+}
+
+.intro {
+  opacity: 1;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9997;
+  pointer-events: none;
+  animation: fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 0.25s;
 }
 
 img {
@@ -36,7 +106,6 @@ ul {
 hr {
   background-color: #272727;
 }
-
 
 .post-list {
   padding-left: 0;
@@ -116,6 +185,9 @@ section {
   width:48vw;
   float:right;
   padding-bottom:50px;
+  padding: 18px;
+
+  box-shadow: 0px 0px 12px 6px rgba(0, 0, 0, 0.2);
 
   p {
     margin-left: 2rem;

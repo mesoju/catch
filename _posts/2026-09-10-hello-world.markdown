@@ -9,6 +9,8 @@ team: programming
 >[!TIP]
 >It may be helpful to follow along this article with a code editor that can compile and run Java programs. 
 >
+>The best way to learn code is by analyzing example code, modifying the code and seeing what changes, and also completing exercises.
+>
 >We recommend [OneCompiler - Java](https://onecompiler.com/java) for running simple online Java programs.
 
 <hr>
@@ -18,6 +20,8 @@ team: programming
 1. "Hello World!"
 
 2. How Java Works
+
+3. Print Statements
 
 <hr>
 
@@ -30,8 +34,10 @@ public class Main {
         System.out.println("Hello world!");
     }
 }
-
-// Output: Hello world!
+{% endhighlight %}
+Output:
+{% highlight plaintext %}
+Hello world!
 {% endhighlight %}
 
 A lot of beginner programming tutorials start off with this block of code due to its simplicity. There are three main things to dissect from this block of code;
@@ -59,7 +65,10 @@ public class Main {
 }
 {% endhighlight %}
 
-Well, every program (*not* every class) in Java also requires a **main** method that acts as a starting point to show where code has to start from. Code in the **main** method will be ran as soon as the program is executed. You can create a **main** method by writing `public static void main()`. *Woah*, that's a lot of words, what does `public`, `static`, and `void` mean? Well, for now we don't really need to understand them for our purposes, but they do serve very essential roles later. All you need to know is that those keywords mean that the method is public and can be accessed by other Java classes, the method is static so it is directly associated with the class itself, and the method doesn't return anything. Don't forget the curly brackets to complete your method!
+>[!CAUTION]
+>This article assumes that you're writing code in a Java file named **Main.java**. Remember that class names have to match the file's name.
+
+Well, every program (**not** every class) in Java also requires a **main** method typically in the **Main** class that acts as a starting point to show where code has to start from. Code in the **main** method will be ran as soon as the program is executed. You can create a **main** method by writing `public static void main()`. *Woah*, that's a lot of keywords, what does `public`, `static`, and `void` mean? Well, for now we don't really need to understand them for our purposes, but they do serve very essential roles later. All you need to know is that those keywords mean that the method is public and *can be accessed by other Java classes*, the method is static so it is *directly associated with the class itself*, and the method *doesn't return anything*. Don't forget the curly brackets to complete your method!
 
 {% highlight java %}
 public class Main {
@@ -71,22 +80,74 @@ public class Main {
 }
 {% endhighlight %}
 
-Most people start off with the code `System.out.println()`. This code essentially allows you to put data onto a console / output. We can put the ***string*** `"Hello world!"` inside of the parentheses to tell the code what to print.
+<hr>
+
+## 3. Print Statements
+
+Most people start off with the code `System.out.println();`. This code essentially allows you to put data on a new line into a console / output. We can put the ***string*** `"Hello world!"` inside of the parentheses to tell the code what to print.
 >[!NOTE]
->A ***string*** is used to represent text, so you can write words, entire sentences and paragraphs. Strings can be formed by putting your text in between quotation marks: "like this!"
+>A ***string*** is used to represent text, so you can write words, entire sentences, and paragraphs. Strings can be formed by putting your text in between quotation marks: "like this!"
 
 {% highlight java %}
 public class Main {
     public static void main() {
-        System.out.println("Hello world!")
-        // Try running this in your code editor to confirm that the program outputs "Hello world!"
+        System.out.println("Hello world!");
     }
 }
-
-// Output: Hello world!
+{% endhighlight %}
+Output:
+{% highlight plaintext %}
+Hello world!
 {% endhighlight %}
 
-Congrats! You've made your first successful Java program... but let's apply this knowledge!
+Print statements can be very useful to programmers as they are a common way that we can see results and feedback from the program itself! Without print statements or some form of code to provide an output we would have zero idea of what our program is doing. We can also use print statements to **debug** our code by placing them at points in our program where you can see if that part of the code successfully ran or what values the print statement returns. 
+
+Java has two main types of print statements:
+
+1. `System.out.println();` - This prints an output **and then** moves the console to the next line.
+2. `System.out.print();` - This also prints an output, but the output does **not** create a new line after.
+
+Let's take a look at a few examples:
+
+1. Using `System.out.println();`
+
+{% highlight java %}
+public class Main {
+    public static void main() {
+        System.out.println("Hello");
+        System.out.println("world!");
+    }
+}
+{% endhighlight %}
+Output:
+{% highlight plaintext %}
+Hello 
+world!
+{% endhighlight %}
+
+Notice how `println()` prints out text on their own separate lines.
+
+2. Using `System.out.print();`
+
+{% highlight java %}
+public class Main {
+    public static void main() {
+        System.out.print("Hello ");
+        System.out.print("world!");
+    }
+}
+{% endhighlight %}
+Output:
+{% highlight plaintext %}
+Hello world!
+{% endhighlight %}
+
+Notice how although we have two `print()` statements, the text are on the same line.
+
+>[!IMPORTANT]
+>You may have noticed that some lines of code have a semi-colon at the very end ( ; ). When Java compiles your program into computer readable instructions **it never actually knows about your spaces, lines, and tabs.** Java reads all of your code as one long continuous line of code hence **the need for semi-colons at the very end of the lines of code to tell the compiler that the current line of code ends there.** The *class* and *method* don't require semi-colons because they have an **obvious start and end point using curly brackets.**
+
+Congrats! You've built your first working Java program step by step, and also learned about two lines of code! It wasn't that bad, right? Let's try applying what you've learned.
 
 <hr>
 
@@ -96,14 +157,14 @@ Congrats! You've made your first successful Java program... but let's apply this
 public class Main {
     public static void main() {
         // Write your code below!
-
+        
     }
 }
 {% endhighlight %}
 
-Copy and paste the code above into your code editor. How do you write a line of code that prints to the console? Try printing a variety of different of outputs!
+Copy and paste the code above into your code editor. What line of code should you use that prints to the console? After, try printing a variety of different outputs of your choice!
 
-Try printing this:
+Finally, try printing this:
 `7538 Metal Mountain`
 
 <hr>
