@@ -1,0 +1,91 @@
+---
+layout: post
+title:  "Comments"
+date:   2026-09-12 04:00:00 -0400
+author: Vincent Tong
+team: programming
+---
+
+<hr>
+
+## Table of Contents
+
+
+1. Introduction to Comments
+2. Single-line Comments
+3. Multi-line Comments
+4. Debugging Uses
+
+<hr>
+
+## 1. Introduction to Comments
+
+***Comments*** can be inserted into your Java program to **keep notes at points in your program and also explain what the program would do** for others. Code without comments can look daunting and hard to understand. 
+
+You can also **use comments to prevent the execution of a block of code** and to potentially test alternative code. 
+
+<hr>
+
+## 2. Single-line Comments
+
+You may have seen single-line comments plenty of times in previous code examples. 
+
+Single-line comments can be formed using double-slashes `//` and **any text between the slashes and the end of that line will be ignored by the Java compiler**, or in other words it will not be executed.
+
+You can either use them on their own line, or after a completed code statement:
+
+Separate Comment Line:
+{% highlight java %}
+// This code will print "Hello world!"
+System.out.println("Hello world!");
+{% endhighlight %}
+
+After a code statement:
+{% highlight java %}
+System.out.println("Hello world!"); // This code will print "Hello world!"
+{% endhighlight %}
+
+<hr>
+
+## 3. Multi-line Comments
+
+Sometimes, you may want to write comments that are quite lengthy and would look more neat across multiple lines, or you want to comment out a large section of code. Multi-line comments are excellent at this job.
+
+Multi-line comments can be formed by using `/*` at the beginning of what you want to comment, and then closed with `*/` at the end of the comment. **Anything between** `/*` **and** `*/` **will be ignored and not executed by the compiler**. 
+
+{% highlight java %}
+/* The code below prints "Hello world!" to the console output,
+and then creates a new line in the output! */
+System.out.println("Hello world!");
+{% endhighlight %}
+
+<hr>
+
+## 4. Debugging Uses
+
+Aside from comments being able to write descriptions and notes about the program, they can also be used extensively for ***debugging***!
+
+>[!IMPORTANT]
+>Later we will explore **debugging** more in-depth because it is an extremely important process of programming, but debugging is the *process of finding, isolating, analyzing, and fixing bugs and errors in your program*.
+
+If you have code that doesn't function properly or simply don't want the code to execute, you can comment them out.
+
+{% highlight java %}
+// System.out.println("This is code A!");
+System.out.println("This is code B!");
+{% endhighlight %}
+Output:
+{% highlight plaintext %}
+This is code B!
+{% endhighlight %}
+
+In the code above, we had our code **A** and **B** but we didn't want code **A** to run, so we commented that part and only the print statement for **B** ran and produced an output. If **A** and **B** were actual code segments opposed to print statements and contained non-functional code, it'd be extremely helpful to comment out code **A** or **B** to identify where the error comes from. Perhaps you made new alternative code **B**, but wanted to still have code **A** to reference, it would be useful to comment the old code.
+
+>[!TIP]
+>You can quickly comment existing parts of your program by highlighting your code and pressing `Ctrl` + `/`. This works in OneCompiler and Visual Studio Code.
+
+<hr>
+
+Have any questions or want to discuss exercise answers? Be sure to ask for help on the Discord!
+
+***Thanks for reading, see you in the next article!***

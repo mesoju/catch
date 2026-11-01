@@ -19,7 +19,7 @@ team: programming
 
 1. "Hello World!"
 
-2. How Java Works
+2. Main Class and main Method
 
 3. Print Statements
 
@@ -48,7 +48,7 @@ A lot of beginner programming tutorials start off with this block of code due to
 
 <hr>
 
-## 2. How Java Works
+## 2. Main Class and main Method
 
 Right now, you don't need to worry about some of the unfamiliar keywords in order to get started, and we'll cover these in future articles.
 
@@ -84,9 +84,14 @@ public class Main {
 
 ## 3. Print Statements
 
-Most people start off with the code `System.out.println();`. This code essentially allows you to put data on a new line into a console / output. We can put the ***string*** `"Hello world!"` inside of the parentheses to tell the code what to print.
+>[!IMPORTANT]
+>You might hear ***code statements*** in articles and documentations, and it refers to lines of instruction that tells the program how to run and what to do. You will learn about ***print statements*** which is an example of a code statement that tells the program to output data to a console.
+>
+>Java runs code statements line by line at once in a **sequential order**. Think of programming like writing instructions for a recipe where the program will read that recipe in order of steps. If you write three code statements together, the first will run, then the second, then finally the third. Code will always run in a sequential order when they are grouped together in a **scope**, but the *order gets interrupted when code goes beyond its own scope* which we'll look into later. For now, you won't have to worry about scopes to retain simplicity.
+
+Most people start off with the code `System.out.println();`. This code statement essentially allows you to put data on a new line into a console / output. We can put the ***string*** `"Hello world!"` inside of the parentheses to tell the code what to print.
 >[!NOTE]
->A ***string*** is used to represent text, so you can write words, entire sentences, and paragraphs. Strings can be formed by putting your text in between quotation marks: "like this!"
+>A ***string*** is used to represent text, so you can write words, entire sentences, and paragraphs. Strings can be formed by putting your text in between quotation marks: **"**like this!**"**
 
 {% highlight java %}
 public class Main {
@@ -145,7 +150,7 @@ Hello world!
 Notice how although we have two `print()` statements, the text are on the same line.
 
 >[!IMPORTANT]
->You may have noticed that some lines of code have a semi-colon at the very end ( ; ). When Java compiles your program into computer readable instructions **it never actually knows about your spaces, lines, and tabs.** Java reads all of your code as one long continuous line of code hence **the need for semi-colons at the very end of the lines of code to tell the compiler that the current line of code ends there.** The *class* and *method* don't require semi-colons because they have an **obvious start and end point using curly brackets.**
+>You may have noticed that all code statements have a semi-colon at the very end ( ; ). When Java compiles your program into computer readable instructions **it never actually knows about your lines and tabs.** Java reads all of your code as *one long continuous line of code* hence **the need for semi-colons at the very end of the lines of code to tell the compiler that the current line of code ends there.** The *class* and *method* don't require semi-colons because they have an **obvious start and end point using curly brackets which creates a scope.**
 
 Congrats! You've built your first working Java program step by step, and also learned about two lines of code! It wasn't that bad, right? Let's try applying what you've learned.
 

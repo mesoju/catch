@@ -75,7 +75,7 @@ Why are they called *primitives*? I'm sure you've watched YouTube videos of peop
 We'll explore more about reference types in later articles when we start to work with *classes* and *object-oriented programming*, but ***reference-types*** are types of data that fall under a *class* and are often custom *objects* that contain *properties* and *methods*. Understanding how to utilize reference types can make your program much more concise and powerful.
 
 >[!NOTE]
->It is called a **reference type** because when you create a variable of this type, the variable doesn't actually contain the physical data itself in memory, but rather the variable is a 'reference' that points to where the data is located in memory for the program to access. This technical property isn't necessary to understand for you to code **EXCEPT** for one scenario which we'll explore later.
+>It is called a **reference type** because when you create a variable of this type, the variable doesn't actually contain the physical data itself in memory, but rather the variable is a 'reference' that points to where the data is located in memory for the program to access. This technical property isn't necessary to understand for you to code *EXCEPT* for one scenario which we'll explore later.
 
 For now, the most familiar reference type to you would likely be the `String` type. If you recall what a `String` does, it represents text data.
 
@@ -105,9 +105,11 @@ You simply declare the variable by defining its type, naming the variable, and t
 >[!TIP]
 >Notice the variable name's capitalization where the first letter is lowercase but the other words are capitalized.
 >
->This practice is called **camelCase**, and while you could name your variables how you'd like to (given that it uses valid characters), using *camelCase* is a standard convention practice that most programmers use to make variables more readable for others and themselves.
+>This practice is called **camelCase**, and while you could name your variables how you'd like to (given that it uses valid characters), using camelCase is a standard convention practice that most programmers use to make *variables more readable* for others and themselves.
 >
->Also, a good practice is to **name your variables based on what they're used for**.
+>Also, a good practice is to *name your variables based on what they're used for*.
+>
+>Oh also, variable names **can not start with a number**. `1stPlace` is an illegal variable name, but `firstPlace1` is a legal name. Variable names **can not use spaces**.
 
 <hr>
 
@@ -134,7 +136,7 @@ Output:
 7
 {% endhighlight %}
 
-What do you notice? We have two lines of code here within the `main` method that you should be familiar with. `int myInt = 7` essentially tells the program to create a new variable of the type `int` and to assign it the value of `7`. This works out because `int` represents integer numbers (whole numbers) and `7` is in fact a whole number. Then the second line of code prints out the value of `myInt`. You can use variables in your programs simply by typing out the variable's name after you declare the variable.
+What do you notice? We have two lines of code here within the `main` method that you should be familiar with. `int myInt = 7` essentially tells the program to create a new variable of the type `int` and to assign it the value of `7`. This works out because `int` represents integer numbers (whole numbers) and `7` is in fact a whole number. Then the second line of code prints out the value of `myInt`. You can use variables in your programs simply by typing out the variable's name after you declare the variable (**case-sensitive**).
 
 However, if you tried to place a different type of value such as a `double` which is a decimal number inside of `myInt` and create a conflict of types, you'll be met with an error.
 
@@ -156,7 +158,7 @@ Output:
 Error (incompatible types)
 {% endhighlight %}
 
-The program errors because Java is a **strictly-typed** language that forces variables to **explicitly have a type but also a value that matches that type**.
+The program errors because Java is a ***strictly-typed*** language that forces variables to **explicitly have a type but also a value that matches that type**.
 
 >[!TIP]
 >If you explore different languages, a lot of common languages like Python do not force strict-typing like you see here in Java, but rather give you an opportunity to strictly type your variables. You may think that strict-typing is restrictive and an annoyance, but I actually ended up preferring strict-typing even beyond Java because **it can prevent you from making minor mistakes about your variables and provides you with more control over your program**.
@@ -175,7 +177,7 @@ The program errors because Java is a **strictly-typed** language that forces var
 
 I wish it were that easy, but just like many things in life there always has to be a caveat. 
 
-There are a few scenarios where you actually **CAN** use a value of a different type inside of a variable. We'll explore this more when we discuss *auto-boxing*, *un-boxing*, and *interfaces*. Do note that these few scenarios are kind of niche, but nonetheless I've ran into them while coding the robot occasionally.
+There are a few scenarios where you actually *CAN* use a value of a different type inside of a variable. We'll explore this more when we discuss *auto-boxing*, *un-boxing*, and *interfaces*. Do note that these few scenarios are kind of niche, but nonetheless I've ran into them while coding the robot occasionally.
 
 Consider the following code:
 
@@ -203,7 +205,7 @@ When you first approach that code, you'd likely believe it would error, right? A
 
 *Well, sort of . . .* Consider the idea that it'd be an untrue statement to say that a number with decimals (i.e. `9.4`) is a whole number, but wouldn't it be a true statement to say that a whole number (i.e. `9`) could be also a decimal number? After all, `9` could just be represented as `9.0` and still be both a whole and a decimal number. Java handles these conversions by itself because it'd always be the case that if you pass in an `int` value to a `double` variable that the variable has a way to convert the `int` value to be a `double`, but not vice-versa.
 
-You *shouldn't* assume that something that can be converted to another type will always work, but here's an example of one that *does* work. You'll likely find other examples that do work.
+You **shouldn't** assume that something that can be converted to another type will always work, but here's an example of one that *does* work. You'll likely find other examples that do work.
 
 <hr>
 
