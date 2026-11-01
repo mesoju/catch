@@ -71,8 +71,12 @@ Aside from comments being able to write descriptions and notes about the program
 If you have code that doesn't function properly or simply don't want the code to execute, you can comment them out.
 
 {% highlight java %}
-// System.out.println("This is code A!");
-System.out.println("This is code B!");
+public class Main {
+    public static void main() {
+        // System.out.println("This is code A!");
+        System.out.println("This is code B!");
+    }
+}
 {% endhighlight %}
 Output:
 {% highlight plaintext %}
